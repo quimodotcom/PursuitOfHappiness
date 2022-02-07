@@ -7,7 +7,7 @@ public class Happiness : MonoBehaviour
 	public happinessChangeType changeType;
 
 	private SpriteRenderer renderer;
-	private BoxCollider2D collider;
+	private CircleCollider2D collider;
 	private void OnTriggerEnter2D(Collider2D collision) {
 		if (collision.CompareTag("Player")) {
 			if(changeType == happinessChangeType.increase)
